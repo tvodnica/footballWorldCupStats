@@ -1,0 +1,42 @@
+﻿<Window x:Class="Wpf.PlayerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf"
+        mc:Ignorable="d"
+        Title="PlayerWindow" Height="450" Width="800" Loaded="Window_Loaded">
+   
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Column="0" Grid.Row="0" Text="Slika:" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="1" Text="Ime:" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="2" Text="Broj:" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="3" Text="Pozicija:" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="4" Text="Kapetan:" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="5" Text="Golovi u ovoj utakmici:" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="6" Text="Žuti kartoni u ovoj utakmici:" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+
+        <Image x:Name="image_playerImage" Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" Source="playerImage.png"></Image>
+        <TextBlock x:Name="text_playerName" Grid.Column="1" Grid.Row="1"  FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+        <TextBlock x:Name="text_playerNumber" Grid.Column="1" Grid.Row="2"  FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+        <TextBlock x:Name="text_playerPosition" Grid.Column="1" Grid.Row="3"  FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+        <TextBlock x:Name="text_playerIsCaptain" Grid.Column="1" Grid.Row="4"  FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+        <TextBlock x:Name="text_playeGoals" Grid.Column="1" Grid.Row="5"  FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+        <TextBlock x:Name="text_playerYellowCards" Grid.Column="1" Grid.Row="6"  FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+
+    </Grid>
+</Window>

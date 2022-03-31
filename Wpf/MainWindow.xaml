@@ -1,0 +1,164 @@
+﻿<Window x:Class="Wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="550" Width="700" MinWidth="700" MinHeight="550" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded" Closing="Window_Closing">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="75"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="75"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <ComboBox x:Name="comboBox_favTeam" Grid.Column="0" Grid.Row="0" Margin="25 25 25 10" FontSize="16"/>
+        <TextBlock x:Name="textBlock_favScore" Grid.Column="1" Grid.Row="0" Text="?" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+        <TextBlock Grid.Column="2" Grid.Row="0" Text="-" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+        <TextBlock x:Name="textBlock_againstScore" Grid.Column="3" Grid.Row="0" Text="?" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+        <ComboBox x:Name="comboBox_againstTeam" Grid.Column="4" Grid.Row="0" Margin="25 25 25 10" SelectionChanged="comboBox_againstTeam_SelectionChanged" FontSize="16"/>
+
+        <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Omiljena reprezentacija" FontSize="15" VerticalAlignment="Center"></TextBlock>
+            <Button x:Name="button_FavTeamInfo" Content="INFO" Width="75" Height="25" Margin="25 0 0 0" Click="button_FavTeamInfo_Click" IsEnabled="False" Cursor="Hand">
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Trigger.EnterActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <ThicknessAnimation Duration="0:0:0.250" To="5" 
+                                                            Storyboard.TargetProperty="BorderThickness" />                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.EnterActions>
+                                <Trigger.ExitActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <ThicknessAnimation Duration="0:0:0.250" To="1" 
+                                                            Storyboard.TargetProperty="BorderThickness" />
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.ExitActions>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Grid.Column="4" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Protivnik" FontSize="15" VerticalAlignment="Center"></TextBlock>
+            <Button x:Name="button_againstTeamInfo" Content="INFO" Width="75" Height="25" Margin="25 0 0 0" Click="button_againstTeamInfo_Click" IsEnabled="False" Cursor="Hand">
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Trigger.EnterActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <ThicknessAnimation Duration="0:0:0.250" To="5" 
+                                                            Storyboard.TargetProperty="BorderThickness" />
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.EnterActions>
+                                <Trigger.ExitActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <ThicknessAnimation Duration="0:0:0.5" To="1" 
+                                                            Storyboard.TargetProperty="BorderThickness" />
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.ExitActions>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+        </StackPanel>
+
+        <Grid x:Name="grid_pitch" Grid.Row="2" Grid.ColumnSpan="5"  Margin="25" Height="Auto">
+            <Grid.Background>
+                <ImageBrush ImageSource="istockphoto-915087622-612x612.jpg"/>
+            </Grid.Background>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+
+            <!--FAVORITE TEAM-->
+
+            <local:UCPlayerWindow x:Name="ucp_FavGK" Grid.Column="0" Grid.Row="1" Grid.RowSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center"></local:UCPlayerWindow>
+
+            <local:UCPlayerWindow x:Name="ucp_FavDF1" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center"></local:UCPlayerWindow>
+            <local:UCPlayerWindow x:Name="ucp_FavDF2" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center"></local:UCPlayerWindow>
+            <local:UCPlayerWindow x:Name="ucp_FavDF3" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center"></local:UCPlayerWindow>
+            <local:UCPlayerWindow x:Name="ucp_FavDF4" Grid.Column="1" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center"></local:UCPlayerWindow>
+
+            <local:UCPlayerWindow x:Name="ucp_FavMD1" Grid.Column="2" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center"></local:UCPlayerWindow>
+            <local:UCPlayerWindow x:Name="ucp_FavMD2" Grid.Column="2" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center"></local:UCPlayerWindow>
+            <local:UCPlayerWindow x:Name="ucp_FavMD3" Grid.Column="2" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center"></local:UCPlayerWindow>
+            <local:UCPlayerWindow x:Name="ucp_FavMD4" Grid.Column="2" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center"></local:UCPlayerWindow>
+
+            <local:UCPlayerWindow x:Name="ucp_FavFW1" Grid.Column="3" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center"></local:UCPlayerWindow>
+            <local:UCPlayerWindow x:Name="ucp_FavFW2" Grid.Column="3" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center"></local:UCPlayerWindow>
+            <local:UCPlayerWindow x:Name="ucp_FavFW3" Grid.Column="3" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center"></local:UCPlayerWindow>
+            <local:UCPlayerWindow x:Name="ucp_FavFW4" Grid.Column="3" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center"></local:UCPlayerWindow>
+
+            <!--FAVORITE TEAM-->
+
+            <local:UCPlayerWindow x:Name="ucp_AgainstGK" Grid.Column="7" Grid.Row="1" Grid.RowSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center"></local:UCPlayerWindow>
+
+            <local:UCPlayerWindow x:Name="ucp_AgainstDF1" Grid.Column="6" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center"></local:UCPlayerWindow>
+            <local:UCPlayerWindow x:Name="ucp_AgainstDF2" Grid.Column="6" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center"></local:UCPlayerWindow>
+            <local:UCPlayerWindow x:Name="ucp_AgainstDF3" Grid.Column="6" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center"></local:UCPlayerWindow>
+            <local:UCPlayerWindow x:Name="ucp_AgainstDF4" Grid.Column="6" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center"></local:UCPlayerWindow>
+
+            <local:UCPlayerWindow x:Name="ucp_AgainstMD1" Grid.Column="5" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center"></local:UCPlayerWindow>
+            <local:UCPlayerWindow x:Name="ucp_AgainstMD2" Grid.Column="5" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center"></local:UCPlayerWindow>
+            <local:UCPlayerWindow x:Name="ucp_AgainstMD3" Grid.Column="5" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center"></local:UCPlayerWindow>
+            <local:UCPlayerWindow x:Name="ucp_AgainstMD4" Grid.Column="5" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center"></local:UCPlayerWindow>
+
+            <local:UCPlayerWindow x:Name="ucp_AgainstFW1" Grid.Column="4" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center"></local:UCPlayerWindow>
+            <local:UCPlayerWindow x:Name="ucp_AgainstFW2" Grid.Column="4" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center"></local:UCPlayerWindow>
+            <local:UCPlayerWindow x:Name="ucp_AgainstFW3" Grid.Column="4" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center"></local:UCPlayerWindow>
+            <local:UCPlayerWindow x:Name="ucp_AgainstFW4" Grid.Column="4" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center"></local:UCPlayerWindow>
+
+        </Grid>
+        <Button Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" Content="Postavke" Height="30" Margin="20 0 20 0" Click="SettingsButton_Click" Cursor="Hand"/>
+        <StatusBar Grid.Row="4" Grid.ColumnSpan="5">
+            <StatusBarItem>
+                <ProgressBar x:Name="progressBar" Value="0" Width="150" Height="15" Visibility="Collapsed"></ProgressBar>
+            </StatusBarItem>
+            <StatusBarItem>
+                <TextBlock x:Name="text_StatusBar" Text="Sve 5!"></TextBlock>
+            </StatusBarItem>
+        </StatusBar>
+    </Grid>
+
+</Window>

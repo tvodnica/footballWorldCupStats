@@ -1,0 +1,603 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="comboBox_teams.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="comboBox_teams.Location" type="System.Drawing.Point, System.Drawing">
+    <value>157, 56</value>
+  </data>
+  <data name="comboBox_teams.Size" type="System.Drawing.Size, System.Drawing">
+    <value>374, 24</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="comboBox_teams.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;comboBox_teams.Name" xml:space="preserve">
+    <value>comboBox_teams</value>
+  </data>
+  <data name="&gt;&gt;comboBox_teams.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_teams.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;comboBox_teams.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="label_favoriteTeam.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_favoriteTeam.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="label_favoriteTeam.Location" type="System.Drawing.Point, System.Drawing">
+    <value>188, 27</value>
+  </data>
+  <data name="label_favoriteTeam.Size" type="System.Drawing.Size, System.Drawing">
+    <value>245, 20</value>
+  </data>
+  <data name="label_favoriteTeam.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="label_favoriteTeam.Text" xml:space="preserve">
+    <value>Odaberite omiljenu reprezentaciju</value>
+  </data>
+  <data name="&gt;&gt;label_favoriteTeam.Name" xml:space="preserve">
+    <value>label_favoriteTeam</value>
+  </data>
+  <data name="&gt;&gt;label_favoriteTeam.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_favoriteTeam.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label_favoriteTeam.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="button_confirm.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="button_confirm.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="button_confirm.Location" type="System.Drawing.Point, System.Drawing">
+    <value>563, 40</value>
+  </data>
+  <data name="button_confirm.Size" type="System.Drawing.Size, System.Drawing">
+    <value>156, 40</value>
+  </data>
+  <data name="button_confirm.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="button_confirm.Text" xml:space="preserve">
+    <value>Potvrdi</value>
+  </data>
+  <data name="&gt;&gt;button_confirm.Name" xml:space="preserve">
+    <value>button_confirm</value>
+  </data>
+  <data name="&gt;&gt;button_confirm.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_confirm.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button_confirm.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <metadata name="bgFormLoad.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>259, 17</value>
+  </metadata>
+  <metadata name="bgWorker_SaveFavTeamGetPlayers.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="folderBrowserDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>505, 17</value>
+  </metadata>
+  <data name="flp_FavoritePlayers.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="flp_FavoritePlayers.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 391</value>
+  </data>
+  <data name="flp_FavoritePlayers.Size" type="System.Drawing.Size, System.Drawing">
+    <value>900, 115</value>
+  </data>
+  <data name="flp_FavoritePlayers.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;flp_FavoritePlayers.Name" xml:space="preserve">
+    <value>flp_FavoritePlayers</value>
+  </data>
+  <data name="&gt;&gt;flp_FavoritePlayers.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;flp_FavoritePlayers.Parent" xml:space="preserve">
+    <value>panel_selectPlayers</value>
+  </data>
+  <data name="&gt;&gt;flp_FavoritePlayers.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="flp_allPlayers.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="flp_allPlayers.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="flp_allPlayers.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 30</value>
+  </data>
+  <data name="flp_allPlayers.Size" type="System.Drawing.Size, System.Drawing">
+    <value>900, 300</value>
+  </data>
+  <data name="flp_allPlayers.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;flp_allPlayers.Name" xml:space="preserve">
+    <value>flp_allPlayers</value>
+  </data>
+  <data name="&gt;&gt;flp_allPlayers.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;flp_allPlayers.Parent" xml:space="preserve">
+    <value>panel_selectPlayers</value>
+  </data>
+  <data name="&gt;&gt;flp_allPlayers.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="cms_SendToOtherPanel.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>850, 17</value>
+  </metadata>
+  <data name="prebaciUDrugiPanelToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>186, 22</value>
+  </data>
+  <data name="prebaciUDrugiPanelToolStripMenuItem.Text" xml:space="preserve">
+    <value>Prebaci u drugi panel</value>
+  </data>
+  <data name="dodajurediSlikuToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>186, 22</value>
+  </data>
+  <data name="dodajurediSlikuToolStripMenuItem.Text" xml:space="preserve">
+    <value>Dodaj/uredi sliku</value>
+  </data>
+  <data name="izbrišiSlikuToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>186, 22</value>
+  </data>
+  <data name="izbrišiSlikuToolStripMenuItem.Text" xml:space="preserve">
+    <value>Izbriši sliku</value>
+  </data>
+  <data name="cms_SendToOtherPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>187, 70</value>
+  </data>
+  <data name="&gt;&gt;cms_SendToOtherPanel.Name" xml:space="preserve">
+    <value>cms_SendToOtherPanel</value>
+  </data>
+  <data name="&gt;&gt;cms_SendToOtherPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_showSortedMatches.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="button_showSortedMatches.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="button_showSortedMatches.Location" type="System.Drawing.Point, System.Drawing">
+    <value>478, 552</value>
+  </data>
+  <data name="button_showSortedMatches.Size" type="System.Drawing.Size, System.Drawing">
+    <value>226, 48</value>
+  </data>
+  <data name="button_showSortedMatches.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="button_showSortedMatches.Text" xml:space="preserve">
+    <value>Prikaži rang listu utakmica</value>
+  </data>
+  <data name="&gt;&gt;button_showSortedMatches.Name" xml:space="preserve">
+    <value>button_showSortedMatches</value>
+  </data>
+  <data name="&gt;&gt;button_showSortedMatches.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_showSortedMatches.Parent" xml:space="preserve">
+    <value>panel_selectPlayers</value>
+  </data>
+  <data name="&gt;&gt;button_showSortedMatches.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="button_showSortedPlayers.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="button_showSortedPlayers.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="button_showSortedPlayers.Location" type="System.Drawing.Point, System.Drawing">
+    <value>217, 552</value>
+  </data>
+  <data name="button_showSortedPlayers.Size" type="System.Drawing.Size, System.Drawing">
+    <value>226, 48</value>
+  </data>
+  <data name="button_showSortedPlayers.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="button_showSortedPlayers.Text" xml:space="preserve">
+    <value>Prikaži rang listu igrača</value>
+  </data>
+  <data name="&gt;&gt;button_showSortedPlayers.Name" xml:space="preserve">
+    <value>button_showSortedPlayers</value>
+  </data>
+  <data name="&gt;&gt;button_showSortedPlayers.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_showSortedPlayers.Parent" xml:space="preserve">
+    <value>panel_selectPlayers</value>
+  </data>
+  <data name="&gt;&gt;button_showSortedPlayers.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label_favoritePlayers.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_favoritePlayers.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="label_favoritePlayers.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 367</value>
+  </data>
+  <data name="label_favoritePlayers.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 20</value>
+  </data>
+  <data name="label_favoritePlayers.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="label_favoritePlayers.Text" xml:space="preserve">
+    <value>Omiljeni igrači</value>
+  </data>
+  <data name="&gt;&gt;label_favoritePlayers.Name" xml:space="preserve">
+    <value>label_favoritePlayers</value>
+  </data>
+  <data name="&gt;&gt;label_favoritePlayers.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_favoritePlayers.Parent" xml:space="preserve">
+    <value>panel_selectPlayers</value>
+  </data>
+  <data name="&gt;&gt;label_favoritePlayers.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label_allPlayers.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_allPlayers.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="label_allPlayers.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 8</value>
+  </data>
+  <data name="label_allPlayers.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 20</value>
+  </data>
+  <data name="label_allPlayers.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="label_allPlayers.Text" xml:space="preserve">
+    <value>Svi igrači</value>
+  </data>
+  <data name="&gt;&gt;label_allPlayers.Name" xml:space="preserve">
+    <value>label_allPlayers</value>
+  </data>
+  <data name="&gt;&gt;label_allPlayers.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_allPlayers.Parent" xml:space="preserve">
+    <value>panel_selectPlayers</value>
+  </data>
+  <data name="&gt;&gt;label_allPlayers.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panel_selectPlayers.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="panel_selectPlayers.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 110</value>
+  </data>
+  <data name="panel_selectPlayers.Size" type="System.Drawing.Size, System.Drawing">
+    <value>921, 617</value>
+  </data>
+  <data name="panel_selectPlayers.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;panel_selectPlayers.Name" xml:space="preserve">
+    <value>panel_selectPlayers</value>
+  </data>
+  <data name="&gt;&gt;panel_selectPlayers.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_selectPlayers.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel_selectPlayers.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1030, 17</value>
+  </metadata>
+  <data name="otvoriPostavkeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 22</value>
+  </data>
+  <data name="otvoriPostavkeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Otvori postavke</value>
+  </data>
+  <data name="postavkeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 20</value>
+  </data>
+  <data name="postavkeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Postavke</value>
+  </data>
+  <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>930, 24</value>
+  </data>
+  <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="menuStrip1.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Name" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="statusStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1145, 17</value>
+  </metadata>
+  <data name="toolStripProgressBar1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 18</value>
+  </data>
+  <data name="toolStripProgressBar1.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="toolStripStatusLabel1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10pt</value>
+  </data>
+  <data name="toolStripStatusLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 19</value>
+  </data>
+  <data name="toolStripStatusLabel1.Text" xml:space="preserve">
+    <value>Sve ok!</value>
+  </data>
+  <data name="statusStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 733</value>
+  </data>
+  <data name="statusStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>930, 24</value>
+  </data>
+  <data name="statusStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="statusStrip1.Text" xml:space="preserve">
+    <value>statusStrip1</value>
+  </data>
+  <data name="&gt;&gt;statusStrip1.Name" xml:space="preserve">
+    <value>statusStrip1</value>
+  </data>
+  <data name="&gt;&gt;statusStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;statusStrip1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;statusStrip1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>930, 757</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>FormMain</value>
+  </data>
+  <data name="&gt;&gt;bgFormLoad.Name" xml:space="preserve">
+    <value>bgFormLoad</value>
+  </data>
+  <data name="&gt;&gt;bgFormLoad.Type" xml:space="preserve">
+    <value>System.ComponentModel.BackgroundWorker, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bgWorker_SaveFavTeamGetPlayers.Name" xml:space="preserve">
+    <value>bgWorker_SaveFavTeamGetPlayers</value>
+  </data>
+  <data name="&gt;&gt;bgWorker_SaveFavTeamGetPlayers.Type" xml:space="preserve">
+    <value>System.ComponentModel.BackgroundWorker, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;folderBrowserDialog1.Name" xml:space="preserve">
+    <value>folderBrowserDialog1</value>
+  </data>
+  <data name="&gt;&gt;folderBrowserDialog1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FolderBrowserDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;prebaciUDrugiPanelToolStripMenuItem.Name" xml:space="preserve">
+    <value>prebaciUDrugiPanelToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;prebaciUDrugiPanelToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dodajurediSlikuToolStripMenuItem.Name" xml:space="preserve">
+    <value>dodajurediSlikuToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;dodajurediSlikuToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;izbrišiSlikuToolStripMenuItem.Name" xml:space="preserve">
+    <value>izbrišiSlikuToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;izbrišiSlikuToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;postavkeToolStripMenuItem.Name" xml:space="preserve">
+    <value>postavkeToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;postavkeToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;otvoriPostavkeToolStripMenuItem.Name" xml:space="preserve">
+    <value>otvoriPostavkeToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;otvoriPostavkeToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripProgressBar1.Name" xml:space="preserve">
+    <value>toolStripProgressBar1</value>
+  </data>
+  <data name="&gt;&gt;toolStripProgressBar1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripStatusLabel1.Name" xml:space="preserve">
+    <value>toolStripStatusLabel1</value>
+  </data>
+  <data name="&gt;&gt;toolStripStatusLabel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormMain</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>
